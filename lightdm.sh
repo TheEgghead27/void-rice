@@ -1,7 +1,7 @@
 #!/bin/bash
 # requires essentials.sh to be set up
 # xbps-install make pkg-config git vim &&
-xbps-install lightdm lightdm-webkit2-greeter dbus-elogind -y &&
+xbps-install lightdm lightdm-webkit2-greeter dbus-elogind libX11 -y &&
 cd /usr/share/lightdm-webkit/themes &&
 git clone https://github.com/ffwff/modern &&
 # set webkit2 to use modern
