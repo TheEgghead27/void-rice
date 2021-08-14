@@ -1,4 +1,4 @@
-#/bin.bash
+#!/bin/bash
 # requires essentials.sh to be set up
 # xbps-install make pkg-config git vim &&
 xbps-install lightdm lightdm-webkit2-greeter dbus-elogind &&
