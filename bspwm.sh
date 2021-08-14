@@ -4,8 +4,9 @@
 xbps-install bspwm feh font-awesome5 maim picom polybar rofi scrot sxhkd xclip -y &&  # install bspwm thing
 # copy mandatory config files
 # in theory if doas with preserve env is set, ~ will be towards the user directory
-install -Dm755 /usr/share/doc/bspwm/examples/bspwmrc ~/.config/bspwm/bspwmrc &&
-install -Dm644 /usr/share/doc/bspwm/examples/sxhkdrc ~/.config/sxhkd/sxhkdrc &&
+# using a potentially breakable way to do the home directory
+install -Dm755 /usr/share/doc/bspwm/examples/bspwmrc "/home/$(logname)/.config/bspwm/bspwmrc" &&
+	install -Dm644 /usr/share/doc/bspwm/examples/sxhkdrc "/home/$(logname)/.config/sxhkd/sxhkdrc" &&
 sed -i 's/urxvt/st/' ~/.config/sxhkdrc &&
 # echo "\nprint_screen\n\tscrot"  >> ~/.config/sxhkdrc
 # attempt to put print screen keybind

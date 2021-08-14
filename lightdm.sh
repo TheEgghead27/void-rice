@@ -12,4 +12,5 @@ ln -s /etc/sv/lightdm /var/service &&
 ln -s /etc/sv/acpid /var/service &&
 ln -s /etc/sv/dbus /var/service &&
 ln -s /etc/sv/polkitd /var/service &&
-ln -s /etc/sv/uuidd /var/service
+ln -s /etc/sv/uuidd /var/service &&
+echo "LightDM installed! Please install an Xsession (dwm.sh or bspwm.sh will do)"
