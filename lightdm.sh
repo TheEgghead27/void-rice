@@ -1,5 +1,6 @@
 #/bin.bash
-xbps-install make pkg-config git vim &&
+# requires essentials.sh to be set up
+# xbps-install make pkg-config git vim &&
 xbps-install lightdm lightdm-webkit2-greeter dbus-elogind &&
 cd /usr/share/lightdm-webkit/themes &&
 git clone https://github.com/ffwff &&
