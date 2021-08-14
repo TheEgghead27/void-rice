@@ -19,6 +19,7 @@ cd st &&
 make clean install &&  # will very much error due to dependencies i also forgor :skull:
 cd .. &&
 git clone https://git.suckless.org/dmenu &&
-make install &&
+cd dmenu &&
+make clean install &&
 
 echo "exec bspwm" > "/home/$(logname)/.xinitrc"
