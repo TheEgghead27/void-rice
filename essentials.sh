@@ -1,4 +1,4 @@
 #!/bin/bash
 xbps-install -Syu &&
 xbps-install gcc make pkg-config git &&  # build essentialss
-xbps-install vim nano htop curl atop &&  # utilities
+xbps-install vim nano htop curl atop  # utilities
