@@ -5,9 +5,9 @@ xbps-install lightdm lightdm-webkit2-greeter dbus-elogind -y &&
 cd /usr/share/lightdm-webkit/themes &&
 git clone https://github.com/ffwff/modern &&
 # set webkit2 to use modern
-sed -i 's/= void/= modern'
+sed -i 's/= void/= modern' /etc/lightdm/lightdm-webkit2-greeter.conf &&
 # set lightdm to invoke webkit2
-sed -i 's/#greeter-session=example-gtk-gnome/greeter-session=lightdm-webkit2-greeter' /etc/lightdm/lightdm.conf
+sed -i 's/#greeter-session=example-gtk-gnome/greeter-session=lightdm-webkit2-greeter' /etc/lightdm/lightdm.conf &&
 ln -s /etc/sv/lightdm /var/service &&
 ln -s /etc/sv/acpid /var/service &&
 ln -s /etc/sv/dbus /var/service &&
