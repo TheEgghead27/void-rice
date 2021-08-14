@@ -7,7 +7,7 @@ xbps-install bspwm feh font-awesome5 maim picom polybar rofi scrot sxhkd xclip -
 # using a potentially breakable way to do the home directory
 install -Dm755 /usr/share/doc/bspwm/examples/bspwmrc "/home/$(logname)/.config/bspwm/bspwmrc" &&
 	install -Dm644 /usr/share/doc/bspwm/examples/sxhkdrc "/home/$(logname)/.config/sxhkd/sxhkdrc" &&
-sed -i 's/urxvt/st/' ~/.config/sxhkdrc &&
+sed -i 's/urxvt/st/' "/home/$(logname)/.config/sxhkdrc" &&
 # echo "\nprint_screen\n\tscrot"  >> ~/.config/sxhkdrc
 # attempt to put print screen keybind
 # my favorite part :)
@@ -21,4 +21,4 @@ cd .. &&
 git clone https://git.suckless.org/dmenu &&
 make clean install &&
 
-echo "exec bspwm" > ~/.xinitrc
+echo "exec bspwm" > "/home/$(logname)/.xinitrc"
