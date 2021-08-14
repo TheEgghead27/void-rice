@@ -6,7 +6,7 @@ xbps-install bspwm feh font-awesome5 maim picom polybar rofi scrot sxhkd xclip -
 # in theory if doas with preserve env is set, ~ will be towards the user directory
 install -Dm755 /usr/share/doc/bspwm/examples/bspwmrc ~/.config/bspwm/bspwmrc &&
 install -Dm644 /usr/share/doc/bspwm/examples/sxhkdrc ~/.config/sxhkd/sxhkdrc &&
-sed -i 's/urxvt/st' ~/.config/sxhkdrc &&
+sed -i 's/urxvt/st/' ~/.config/sxhkdrc &&
 # echo "\nprint_screen\n\tscrot"  >> ~/.config/sxhkdrc
 # attempt to put print screen keybind
 # my favorite part :)
