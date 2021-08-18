@@ -1,7 +1,7 @@
 #!/bin/bash
 # xbps-install -Syu &&  # i'll be recommending plain install from web not image buuut
 # xbps-install gcc make pkg-config git atop htop vim -y &&  # install build tools and a few utilities
-xbps-install bspwm feh font-awesome5 maim picom polybar rofi scrot sxhkd xclip xcompmgr -y &&  # install bspwm thing
+xbps-install bspwm feh font-awesome5 maim picom polybar pulseaudio rofi scrot sxhkd xclip xcompmgr -y &&  # install bspwm thing
 # copy mandatory config files
 # in theory if doas with preserve env is set, ~ will be towards the user directory
 # using a potentially breakable way to do the home directory
