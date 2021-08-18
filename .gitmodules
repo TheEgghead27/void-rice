@@ -10,3 +10,6 @@
 [submodule "suckless/slstatus"]
 	path = suckless/slstatus
 	url = https://github.com/TheEgghead27/slstatus
+[submodule "suckless/st"]
+	path = suckless/st
+	url = https://github.com/TheEgghead27/st.git
