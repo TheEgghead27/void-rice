@@ -4,3 +4,9 @@
 [submodule "suckless/dmenu"]
 	path = suckless/dmenu
 	url = https://github.com/TheEgghead27/dmenu.git
+[submodule "suckless/slock"]
+	path = suckless/slock
+	url = https://github.com/TheEgghead27/slock
+[submodule "suckless/slstatus"]
+	path = suckless/slstatus
+	url = https://github.com/TheEgghead27/slstatus
