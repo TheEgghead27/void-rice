@@ -1,7 +1,7 @@
 #!/bin/bash
 # xbps-install -Syu &&  # i'll be recommending plain install from web not image buuut
 # xbps-install gcc make pkg-config git atop htop vim -y &&  # install build tools and a few utilities
-xbps-install bspwm feh font-awesome5 maim picom polybar rofi scrot sxhkd xclip -y &&  # install bspwm thing
+xbps-install bspwm feh font-awesome5 maim picom polybar rofi scrot sxhkd xclip xcompmgr -y &&  # install bspwm thing
 # copy mandatory config files
 # in theory if doas with preserve env is set, ~ will be towards the user directory
 # using a potentially breakable way to do the home directory
@@ -12,13 +12,11 @@ sed -i 's/urxvt/st/' "/home/$(logname)/.config/sxhkd/sxhkdrc" &&
 # attempt to put print screen keybind
 # my favorite part :)
 xbps-install libXinerama-devel libXft-devel libXext-devel ncurses-devel -y &&
-mkdir /root/.config/suckless &&  # hopefully doesnt error due to .config not existing beforehand
-cd /root/.config/suckless &&
-git clone https://git.suckless.org/st &&
+git submodule update --init --recursive &&  # ensure submodules
+cd suckless &&
 cd st &&
-make clean install &&  # will very much error due to dependencies i also forgor :skull:
+make clean install && 
 cd .. &&
-git clone https://git.suckless.org/dmenu &&
 cd dmenu &&
 make clean install &&
 
