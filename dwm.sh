@@ -16,4 +16,4 @@ make clean install &&
 cd ../slock &&
 make clean install &&
 
-echo "exec dwm" > "/home$(logname)/.xinitrc"
+echo "exec dwm" > "/home/$(logname)/.xinitrc"
