@@ -1,5 +1,5 @@
 xbps-install feh pulseaudio redshift scrot xclip xcompmgr -y &&
-xbps-install imlib2-devel libX11-devel libXft-devel libXinerama-devel libXft-devel libXrandr-devel libXext-devel ncurses-devel -y &&
+xbps-install imlib2-devel libX11-devel libXft-devel libXinerama-devel libXft-devel libXrandr-devel libXext-devel ncurses-devel xorg -y &&
 # no idea if these are needed
 # xbps-install libXScrnSaver-devel libXau-devel libXcomposite-devel libXcursor-devel libXdamage-devel libXdmcp-devel libXfixes-devel libXi-devel libXrandr-devel libXrender-devel libXtst-devel libXxf86vm-devel libxcb-devel libxkbcommon-devel libxml2-devel libxshmfence-devel &&
 git submodule update --init --recursive &&  # ensure submodules
