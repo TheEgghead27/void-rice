@@ -8,6 +8,7 @@ make clean install &&
 cp ../.dwm/powermenu.sh /usr/local/bin/powermenu &&
 cp -r ../.dwm /home/$(logname)/ &&
 cp ./dwm.desktop /usr/share/xsessions &&
+mkdir -p -v /usr/share/icons/hicolor/scalable/places/ &&
 cp ./dwm_badge-symbolic.svg /usr/share/icons/hicolor/scalable/places/ &&
 #gtk-update-icon-cache /usr/share/icons/hicolor
 cd ../st &&
